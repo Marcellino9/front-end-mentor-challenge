@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+:root {
+  --Green: hsl(75, 94%, 57%);
+  --White: hsl(0, 0%, 100%);
+  --Grey-700: hsl(0, 0%, 20%);
+  --Grey-800: hsl(0, 0%, 12%);
+  --Grey-900: hsl(0, 0%, 8%);
+}
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 14px;
+}
+body {
+  font-family: "Inter", sans-serif;
+  background: var(--Grey-900);
+}
+main {
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%);
+  width: 22rem;
+  height: 38rem;
+  background: var(--Grey-800);
+  border-radius: 1rem;
+  color: var(--White);
+}
+header {
+  margin-top: 2rem;
+  margin-inline: 1rem;
+}
+header img {
+  display: block;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  margin-inline: auto;
+  margin-bottom: 1rem;
+}
+header p:first-of-type {
+  font-size: 1.6rem;
+  text-align: center;
+  font-weight: 500;
+}
+header p:nth-of-type(2) {
+  color: var(--Green);
+  margin-top: 1rem;
+  text-align: center;
+}
+header p:nth-of-type(3) {
+  color: rgba(255, 255, 255, 0.5);
+  margin-top: 2rem;
+  text-align: center;
+}
+
+main section {
+  margin-top: 1.6rem;
+  margin-inline: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+main section button {
+  padding: 0.9rem;
+  width: 85%;
+  background: var(--Grey-700);
+  border: none;
+  color: var(--White);
+  font-weight: 700;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+main section button:hover {
+  color: var(--Grey-800);
+  background: var(--Green);
+}
+
+@media screen and (max-width: 375px) {
+  html {
+    font-size: 12px;
+  }
+  .attribution {
+    left: 5%;
+  }
+}
+.attribution {
+  color: var(--White);
+  font-size: 11px;
+  text-align: center;
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.attribution a {
+  color: var(--Green);
+}
